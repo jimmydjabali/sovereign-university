@@ -1,7 +1,4 @@
 export enum Routes {
-  /**
-   * Available in MVP
-   */
   Home = '/',
   UnderConstruction = '/under-construction',
 
@@ -19,6 +16,9 @@ export enum Routes {
 
   // Resources
   Resources = '/resources',
+
+  // Glossary
+  Glossary = '/glossary',
 
   // Resource per type
   Books = '/resources/books',
@@ -61,7 +61,6 @@ export enum Routes {
   BIP = '/bips/:bipId',
   Conferences = '/conferences',
   Conference = '/conferences/:conferenceId',
-  Lexique = '/lexique',
   Calendar = '/calendar',
   Contact = '/contact',
 }

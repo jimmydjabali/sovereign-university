@@ -355,6 +355,12 @@
     },
     "publicGrade": "Public grade: {{grade}}/5"
   },
+  "glossary": {
+    "title": "Glossary",
+    "headerThanksText": "Thanks to Loic For this open source database !",
+    "headerHelp": "Can't find a specific word ? Report it on Github",
+    "filterBarLabel": "Find the word your are looking for:"
+  },
   "settings": {
     "changePassword": "Change password"
   },
@@ -478,6 +484,7 @@
     "home": "Home",
     "intermediate": "Intermediate",
     "interview": "Interview",
+    "glossary": "Glossary",
     "level": {
       "advanced": "Advanced",
       "beginner": "Beginner",

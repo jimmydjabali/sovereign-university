@@ -8,6 +8,7 @@ import { Books } from './pages/books';
 import { Builder } from './pages/builder-details';
 import { Builders } from './pages/builders';
 import { Resources } from './pages/explorer';
+import { Glossary } from './pages/glossary';
 import { Podcast } from './pages/podcast-details';
 import { Podcasts } from './pages/podcasts';
 
@@ -38,6 +39,12 @@ export const betRoute = new Route({
   getParentRoute: () => resourcesRootRoute,
   path: '/bet',
   component: BET,
+});
+
+export const glossaryRoute = new Route({
+  getParentRoute: () => resourcesRootRoute,
+  path: '/glossary',
+  component: Glossary,
 });
 
 export const buildersRoute = new Route({
@@ -87,6 +94,7 @@ export const resourcesRoutes = resourcesRootRoute.addChildren([
   builderDetailsRoute,
   podcastsRoute,
   betRoute,
+  glossaryRoute,
   podcastDetailsRoute,
   // Later
   articlesRoute,
