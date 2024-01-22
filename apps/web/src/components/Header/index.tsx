@@ -11,6 +11,7 @@ import { FaChalkboardTeacher } from 'react-icons/fa';
 import { GiMeshNetwork } from 'react-icons/gi';
 import {
   IoBusinessOutline,
+  IoCalendarOutline,
   IoLibraryOutline,
   IoSchoolOutline,
 } from 'react-icons/io5';
@@ -145,6 +146,12 @@ export const Header = () => {
               description: t('menu.betDescription'),
               path: Routes.BET,
               icon: IoSchoolOutline,
+            },
+            {
+              id: 'calendar',
+              title: t('words.calendar'),
+              path: Routes.Calendar,
+              icon: IoCalendarOutline,
             },
           ],
         },

@@ -24,10 +24,11 @@ export enum Routes {
   Books = '/resources/books',
   Book = '/resources/books/:bookId/:language',
   Podcasts = '/resources/podcasts',
-  BET = '/resources/bet',
   Podcast = '/resources/podcast/:podcastId',
   Builders = '/resources/builders',
   Builder = '/resources/builder/:builderId/:language',
+  BET = '/resources/bet',
+  Calendar = '/resources/calendar',
 
   // Tutorials
   Tutorials = '/tutorials',
@@ -62,6 +63,5 @@ export enum Routes {
   Conferences = '/conferences',
   Conference = '/conferences/:conferenceId',
   Lexique = '/lexique',
-  Calendar = '/calendar',
   Contact = '/contact',
 }

@@ -7,6 +7,7 @@ import { Book } from './pages/book-details';
 import { Books } from './pages/books';
 import { Builder } from './pages/builder-details';
 import { Builders } from './pages/builders';
+import { Calendar } from './pages/calendar';
 import { Resources } from './pages/explorer';
 import { Podcast } from './pages/podcast-details';
 import { Podcasts } from './pages/podcasts';
@@ -52,6 +53,12 @@ export const builderDetailsRoute = new Route({
   component: Builder,
 });
 
+export const calendarRoute = new Route({
+  getParentRoute: () => resourcesRootRoute,
+  path: '/calendar',
+  component: Calendar,
+});
+
 export const podcastsRoute = new Route({
   getParentRoute: () => resourcesRootRoute,
   path: '/podcasts',
@@ -87,6 +94,7 @@ export const resourcesRoutes = resourcesRootRoute.addChildren([
   builderDetailsRoute,
   podcastsRoute,
   betRoute,
+  calendarRoute,
   podcastDetailsRoute,
   // Later
   articlesRoute,
